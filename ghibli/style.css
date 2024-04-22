@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Editorial+New:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+  background-color: #EFEFE6;
+  margin: 0;
+}
+
+.navbar {
+    display: flex;
+    padding-top: 2.5%;
+    padding-left: 2.5%;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1vw;
+    color: #1E2884;
+    z-index: 300;
+    top: 0;
+    left: 0;
+    width: 95vw;
+    z-index: 200;
+    cursor: pointer; 
+  }
+  
+.navbar-left {
+    text-align: left;
+  }
+  
+.navbar-right {
+    text-align: right;
+  }
+  
+.navbar-right span {
+    margin-left: 3vw;
+  }
+  
+.navbar a {
+    color: #1E2884;
+    text-decoration: none;
+  }
+  
+.navbar a:hover {
+    font-weight: 600;
+  }
+
+
+.main-image {
+    height: 95vh; 
+    width: 95vw;
+  }
+  
+.main-image img {
+    margin-left: 2.5%;
+    margin-bottom: 2.5%;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .pics {
+    height: auto; 
+    width: 95vw;
+  }
+  
+.pics img {
+    margin-left: 2.5%;
+    margin-bottom: 2.5%;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+  }
+
+.title-column {
+    width: 57.5vw;
+    padding-left: 2.5%;
+    padding-top: 2.5%;
+    border-radius: 5px;
+}
+
+.title-column h2 {
+    font-family: 'Editorial New', sans-serif;
+    color: #1E2884;
+    font-weight: 100;
+    font-size: 9vw;
+    margin: 0; 
+    padding-bottom: 14%;
+  }
+
+.title-column img {
+    padding-top: 2.5%;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+} 
+  
+.text-column {
+    width: 37.5vw;
+    padding: 2.5%;
+}
+
+  .text-column p {
+    color: #09082A;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1vw;
+  }
+
+  .pics {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 2.5%;
+    clear: both;
+}
+
+.title-column img {
+    padding-top: 2.5%;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+
+  @media screen and (max-width: 768px) {
+    .pics {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .pics {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  }

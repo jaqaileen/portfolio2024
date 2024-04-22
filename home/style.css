@@ -10,7 +10,7 @@ h1 {
   font-weight: 400;
   font-style: normal;
   color: #1E2884;
-  padding-top: 183%;
+  padding-top: 48%;
   padding-left: 2.6%;
   font-size: 10vw;
 }
@@ -58,7 +58,7 @@ p {
 }
 
 .navbar a {
-  color: #EFEFE6;
+  color: #1E2884;
   text-decoration: none;
 }
 
@@ -127,10 +127,11 @@ p {
 }
 
 .image5 {
-  top: 32%;
-  left: -4%;
-  height: auto;
-  width: 31%;
+  top: 37%;
+  left: 0.5%;
+  object-fit: cover;
+  height: 25%;
+  width: 22%;
 }
 
 .arrow {
@@ -188,17 +189,30 @@ p {
   color: #1E2884;
 }
 
+.about-text a:hover {
+  font-style: italic;
+}
+
 .about-text {
-  position: absolute;
+  position: relative;
   font-family: 'Inter', sans-serif;
   font-size: 1.1vw;
   top: 67%; 
   line-height: 155%;
   transform: translateY(-50%);
-  left: 2.5%; 
   width: 51.5%;
   word-wrap: break-word;
   color: #09082A;
+}
+
+.parsons {
+  color: #09082A;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.parsons:hover {
+  font-style: italic;
 }
 
 .image-container {

@@ -17,7 +17,7 @@
     <div class="navbar-right">
         <a href="../works/index.html">WORKS</a></span>
         <span><a href="../experiments/index.html">EXPERIMENTS</a></span>
-        <span><a href="#bottom-of-page">ABOUT</a></span>
+        <span>ABOUT</span>
         <span><a href="../contact/contact.html">CONTACT</a></span>
     </div>
   </nav>
@@ -32,10 +32,16 @@
   <a href="../cyborg/index.html">
     <img class="overlay image1" src="../assets/manifestopostermockup.png" alt="Manifesto">
   </a>
+  <a href="../splash/index.html">
   <img class="overlay image2" src="../assets/splash2.jpg" alt="Splash">
+  </a>
+  <a href="../nyc/index.html">
   <img class="overlay image3" src="../assets/nyc air rights mockup.png" alt="Air Rights">
+  </a>
   <img class="overlay image4" src="https://www.ciaopappy.com/cdn/shop/files/Screenshot2024-03-01at2.05.22PM_1200x.png?v=1709330736" alt="Ciao Pappy" onclick="window.open('https://www.ciaopappy.com/', '_blank')" />
-  <img class="overlay image5" src="../assets/kiki's mockup.png" alt="Kiki">
+  <a href="../ghibli/index.html">
+  <img class="overlay image5" src="../assets/ghibli-cover1.jpg" alt="cover">
+  </a>
 
   <svg class="arrow" width="44" height="19" viewBox="0 0 44 19" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M1 1L21.8421 18L43 1" stroke="#EFEFE6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -43,14 +49,15 @@
 
 </div>
 
-<div id="bottom-of-page">
 <!-- section2 -->
 <div class="section2 section">
   <div class="inner-container">
     <div class="padding-container">
       <h2 class="section">Jaq creates digital experiences. Forging emotions through design, she blends creativity with technology to captivate, connect, and communicate.</h2>
       <h1 class="section sectiontitle" id="about-section">About</h1>
-      <p class="about-text">Born in Singapore, raised in Jakarta, and now based in New York City, Jacqueline Aileen has always viewed the world through a global lens. Her meticulous and playful demeanor is evident in her design approach, as she pursues a Bachelor of Fine Arts degree at <strong class="parsons"><u>Parsons School of Design</u></strong>. Jaq's aim is to intrigue, entice, and emotionally move people through her work, fueled by her curious nature that thrives on experimentation and exploring various mediums. <br> <br> Currently, she finds particular passion in <strong>packaging design</strong>, <strong>branding</strong>, and <strong>UI/UX</strong>.</p>
+      <div class="about-container">
+        <p class="about-text">Born in Singapore, raised in Jakarta, and now based in New York City, Jacqueline Aileen has always viewed the world through a global lens. Her meticulous and playful demeanor is evident in her design approach, as she pursues a Bachelor of Fine Arts degree at <a href="https://www.newschool.edu/parsons/bfa-communication-design/" class="parsons">Parsons School of Design</a>. Jaq's aim is to intrigue, entice, and emotionally move people through her work, fueled by her curious nature that thrives on experimentation and exploring various mediums. <br> <br> Currently, she finds particular passion in <strong>packaging design</strong>, <strong>branding</strong>, and <strong>UI/UX</strong>.</p>
+      </div>
       <div class="image-container">
         <img src="../assets/profile.JPG" alt="About">
       </div>
@@ -68,25 +75,27 @@
 <script>
   window.addEventListener('scroll', function() {
     var scrolled = window.scrollY;
+    var navbar = document.querySelector('.navbar');
+    var navbarLinks = document.querySelectorAll('.navbar a');
     var section2 = document.querySelector('.section2');
-    var navbarText = document.querySelectorAll('.navbar');
-    var navHeight = document.querySelector('.navbar').offsetHeight;
+    var navHeight = navbar.offsetHeight;
     
     var section2Top = section2.getBoundingClientRect().top;
     if (section2Top <= navHeight) {
-      navbarText.forEach(function(text) {
-        text.style.color = '#1E2884';
+      navbar.style.color = '#1E2884';
+      navbarLinks.forEach(function(link) {
+        link.style.color = '#1E2884';
       });
     } else {
-      navbarText.forEach(function(text) {
-        text.style.color = '#F1EEE5';
+      navbar.style.color = '#F1EEE5';
+      navbarLinks.forEach(function(link) {
+        link.style.color = '#EFEFE6';
       });
     }
   });
 
-  function scrollToBottom() {
-    window.scrollTo(0,document.body.scrollHeight);
-}
+
+
 </script>
 
 </body>
